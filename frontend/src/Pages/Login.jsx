@@ -17,7 +17,7 @@ const Login = () => {
       Password:password
     }
     if(!(payload.Email && payload.Password)){
-      console.log("empty")
+      // console.log("empty")
       alert(`Please fill the email password`)
     }
     else{
@@ -25,10 +25,10 @@ const Login = () => {
       Email:email,
       Password:password
     })
-    console.log("Data sent from react to node is ",payload);
-    console.log("Response",res_login)
+    // console.log("Data sent from react to node is ",payload);
+    // console.log("Response",res_login)
       if(res_login.data.length!==0){
-        console.log(res_login.data)
+        // console.log(res_login.data)
         alert("Welcome home")
         navigate("/home")
       }

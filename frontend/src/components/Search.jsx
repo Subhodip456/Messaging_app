@@ -72,14 +72,14 @@ const Search = () => {
   // }))
 
   const msg = messages.map((m)=>{
-    console.log("Name =",Name)
-    console.log("m.chatName",m.chatName)
+    // console.log("Name =",Name)
+    // console.log("m.chatName",m.chatName)
     if(m.chatName === Name){
-     console.log("works")
+    //  console.log("works")
      return m.message
     }
     else{
-     console.log("Not works")
+    //  console.log("Not works")
      return 
     }
    })

@@ -21,7 +21,7 @@ const Messages = () => {
   //   getMessage()
   // },[message])
 
-  console.log("messages=",messages)
+  // console.log("messages=",messages)
   return (
     <div className='messages'>
       {messages.map((m) => (

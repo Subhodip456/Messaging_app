@@ -5,7 +5,7 @@ import {ChatContext} from '../Context/chatContext'
 const Message = ({messages}) => {
   const {userImage} = useContext(ChatContext)
   // const {Name} = useContext(ChatContext)
-  console.log("messages",messages)
+  // console.log("messages",messages)
   const ref = useRef();
 
 

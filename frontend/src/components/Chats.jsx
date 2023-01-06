@@ -21,7 +21,7 @@ const Chats = () => {
         const req = await axios.post("http://localhost:2500/Searchuser",{
           Name:username
         })
-        console.log("request =>",req.data)
+        // console.log("request =>",req.data)
         setChat(req.data)
       }
       catch(err){
@@ -38,21 +38,21 @@ const Chats = () => {
 // },[username])
 
   const msg = messages.map((m)=>{
-   console.log("Name =",Name)
-   console.log("m.chatName",m.chatName)
+  //  console.log("Name =",Name)
+  //  console.log("m.chatName",m.chatName)
    if(m.chatName === Name){
-    console.log("works")
+    // console.log("works")
     return m.message
    }
    else{
-    console.log("Not works")
+    // console.log("Not works")
     return 
    }
   })
 
-  console.log("chat",chat)
-  console.log("chat.map((m)=>m.url)",chat.map((m)=>m.url))
-  console.log("Object.entries(chats)",Object.entries(chat))
+  // console.log("chat",chat)
+  // console.log("chat.map((m)=>m.url)",chat.map((m)=>m.url))
+  // console.log("Object.entries(chats)",Object.entries(chat))
 
 
   return (

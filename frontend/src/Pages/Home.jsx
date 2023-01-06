@@ -23,7 +23,7 @@ const Home = () => {
   const getMessage = async () =>{
     try{
       const req = await axios.get("http://localhost:2500/message")
-      console.log("request =>",req.data)
+      // console.log("request =>",req.data)
       setMessages(req.data)
     }
     catch(err){
@@ -44,7 +44,7 @@ const Home = () => {
     else{
       setSearch(false)
     }
-      console.log("res_register.data",res_register.data);
+      // console.log("res_register.data",res_register.data);
       setuserID(res_register.data[0].userID)
       setData(res_register.data)
       setuser(res_register.data)

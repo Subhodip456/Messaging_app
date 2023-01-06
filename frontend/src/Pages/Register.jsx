@@ -24,8 +24,8 @@ const handleSubmit = async (e) => {
         lastRegisteredAt:new Date()
     }
     if(!(Names && Email && Password)){
-      console.log("payload.Names",payload.Names)
-      console.log("empty")
+      // console.log("payload.Names",payload.Names)
+      // console.log("empty")
       alert(`Please fill the name email password`)
     }
     else{
@@ -34,12 +34,12 @@ const handleSubmit = async (e) => {
         Email:Email,
         Password:Password
       })
-      console.log("Data sent from react to node is ",payload);
-      console.log("response =",db_resp)
+      // console.log("Data sent from react to node is ",payload);
+      // console.log("response =",db_resp)
       if(db_resp.data.length!==0){
-        console.log("db_resp",db_resp)
-        console.log(db_resp.data)
-        console.log("duplicate request")
+        // console.log("db_resp",db_resp)
+        // console.log(db_resp.data)
+        // console.log("duplicate request")
         alert("This email-id is already registered go to login")
         navigate("/login")
       }
@@ -51,7 +51,7 @@ const handleSubmit = async (e) => {
         Password:Password,
         lastRegisteredAt:new Date()
       })
-      console.log("data stored in db and response from node",response.data);
+      // console.log("data stored in db and response from node",response.data);
       alert("Welcome home")
       navigate("/home")
       }

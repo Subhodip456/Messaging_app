@@ -28,14 +28,14 @@ const Chat = () => {
   //   }
   // }
   const handleSend = async () => {
-    console.log("message at chat",message)
-    console.log("Name",Name)
+    // console.log("message at chat",message)
+    // console.log("Name",Name)
     try{
       const req = await axios.post("http://localhost:2500/message",{
       message:message,
       chatName:Name
     })
-    console.log("req",req.data)
+    // console.log("req",req.data)
     }
     catch(err){
       console.error("error occured",err)
@@ -43,7 +43,7 @@ const Chat = () => {
     getMessage()
   }
 
-  console.log("data chats",data)
+  // console.log("data chats",data)
 
   return (
     <div className='chat'>
