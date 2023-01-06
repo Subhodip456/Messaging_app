@@ -23,7 +23,8 @@ const handleSubmit = async (e) => {
         Password:Password,
         lastRegisteredAt:new Date()
     }
-    if(!(payload.Names && payload.Email && payload.Password)){
+    if(!(Names && Email && Password)){
+      console.log("payload.Names",payload.Names)
       console.log("empty")
       alert(`Please fill the name email password`)
     }

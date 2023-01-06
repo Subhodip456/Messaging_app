@@ -9,7 +9,7 @@ const Navbar = () => {
       <span className='logo'>CHAT APP</span>
       <div className='user'>
         <img src='https://images.pexels.com/photos/13623424/pexels-photo-13623424.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt=''></img>
-        <span>{Names}</span>
+        <span>Subhodip</span>
         <button>LOGOUT</button>
       </div>
     </div>

@@ -10,7 +10,7 @@
 
 # production
 /node_modules
-
+/msg_front_end
 
 # misc
 .DS_Store
