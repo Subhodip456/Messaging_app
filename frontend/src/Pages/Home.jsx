@@ -22,7 +22,7 @@ const Home = () => {
 
   const getMessage = async () =>{
     try{
-      const req = await axios.get("http://localhost:2500/message")
+      const req = await axios.get("https://messaging-api.onrender.com/message")
       // console.log("request =>",req.data)
       setMessages(req.data)
     }
@@ -35,7 +35,7 @@ const Home = () => {
     
     try{
       // return username
-    var res_register = await axios.post("http://localhost:2500/Searchuser",{
+    var res_register = await axios.post("https://messaging-api.onrender.com/Searchuser",{
       Name:username
     })
     if(res_register.data.length!==0){
@@ -91,7 +91,7 @@ const handleKey = (e) => {
  const handleChat = async () => {
 try{
   // return username
-var res_register = await axios.post("http://localhost:2500/Searchuser",{
+var res_register = await axios.post("https://messaging-api.onrender.com/Searchuser",{
   Name:username
 })
 setName(res_register.data[0].Name)

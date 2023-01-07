@@ -21,7 +21,7 @@ const Login = () => {
       alert(`Please fill the email password`)
     }
     else{
-    let res_login = await axios.post("http://localhost:2500/login",{
+    let res_login = await axios.post("https://messaging-api.onrender.com/login",{
       Email:email,
       Password:password
     })

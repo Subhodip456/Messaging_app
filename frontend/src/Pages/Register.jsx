@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
       alert(`Please fill the name email password`)
     }
     else{
-      let db_resp = await axios.post("http://localhost:2500/findreg",{
+      let db_resp = await axios.post("https://messaging-api.onrender.com/findreg",{
         Name:Names,
         Email:Email,
         Password:Password
@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
       }
       else
       {
-        let response = await axios.post("http://localhost:2500/Register",{
+        let response = await axios.post("https://messaging-api.onrender.com/Register",{
         Name:Names,
         Email:Email,
         Password:Password,
@@ -84,3 +84,5 @@ const handleSubmit = async (e) => {
 }
 
 export default Register
+
+//http://localhost:2500
