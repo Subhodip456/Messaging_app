@@ -3,7 +3,7 @@ import './style.css'
 import Add from '../img/avatar.png'
 import  axios from "axios"
 import {useNavigate,Link} from "react-router-dom"
-import {ChatContext} from '../Context/chatContext'
+
 
 
 const Register = () => {
