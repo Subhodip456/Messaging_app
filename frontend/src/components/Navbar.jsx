@@ -8,8 +8,8 @@ const Navbar = () => {
   const getName = async () => {
     try{
       let getName_response = await axios.get("https://messaging-api.onrender.com/Register")
-      setNames(getName_response.data.Name)
-      console.log("getName_response",getName_response.data)
+      setNames(getName_response.data[0].Name)
+      console.log("getName_response",getName_response.data[0].Name)
     }
     catch(error){
       console.log("error in fetching name",error)
