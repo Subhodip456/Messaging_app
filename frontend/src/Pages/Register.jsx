@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
                 <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={(e)=>setImage(e.target.files[0])}></input>
                 <label htmlFor='file' className='label-class'>
                   <img src={Add} alt=''></img>
-                  <p className='p1'> Add profile picture</p>
+                  {/* <p className='p1'> Add profile picture</p> */}
                 </label>
                 <button className='button-class'>Sign-up</button>
             </form>
