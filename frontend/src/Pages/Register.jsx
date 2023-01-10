@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
   }
 };
 
-const handleImage = async () => {
+const handleImage = async (e) => {
   console.log(e.target.files);
   setImage(e.target.files[0]);
 }
