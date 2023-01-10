@@ -65,6 +65,9 @@ const handleSubmit = async (e) => {
 const handleImage = async (e) => {
   console.log(e.target.files);
   setImage(e.target.files[0]);
+  const formData = new FormData();
+  formData.append('image',image);
+  console.log("formData",formData);
 }
   
   return (
@@ -80,8 +83,7 @@ const handleImage = async (e) => {
                 <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input>
                 <label htmlFor='file' className='label-class'>
                   <img src={Add} alt=''></img>
-                  {/* <p className='p1'> Add profile picture</p> */}
-                  {/* <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input> */}
+                  <p className='p1'> Add profile picture</p>
                 </label>
                 <button className='button-class'>Sign-up</button>
             </form>
