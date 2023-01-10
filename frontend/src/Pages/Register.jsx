@@ -11,6 +11,7 @@ const Register = () => {
 const [Names,setNames]=useState('')
 const [Email,setEmail]=useState('')
 const [Password,setPassword]=useState('')
+const [image,setImage] = useState('')
 
 const navigate = useNavigate()
 
@@ -70,7 +71,7 @@ const handleSubmit = async (e) => {
                 <input type='text' className='input-class' placeholder='Name' value={Names} onChange={(e)=>setNames(e.target.value)}></input>
                 <input type='email' className='input-class' placeholder='Email' value={Email} onChange={(e)=>setEmail(e.target.value)}></input>
                 <input type='password' className='input-class' placeholder='Password' value={Password} onChange={(e)=>setPassword(e.target.value)} ></input>
-                <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture'></input>
+                <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' files={image} onChange={(e)=>setImage(e.target.files)}></input>
                 <label htmlFor='file' className='label-class'>
                   <img src={Add} alt=''></img>
                   <p className='p1'> Add profile picture</p>
