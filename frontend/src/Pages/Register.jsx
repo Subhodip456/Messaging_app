@@ -80,7 +80,7 @@ const handleImage = async (e) => {
                 <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input>
                 <label htmlFor='file' className='label-class'>
                   <img src={Add} alt=''></img>
-                  <p className='p1'> Add profile picture</p>
+                  {/* <p className='p1'> Add profile picture</p> */}
                   {/* <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input> */}
                 </label>
                 <button className='button-class'>Sign-up</button>
