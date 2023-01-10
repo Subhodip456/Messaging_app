@@ -77,10 +77,11 @@ const handleImage = async (e) => {
                 <input type='email' className='input-class' placeholder='Email' value={Email} onChange={(e)=>setEmail(e.target.value)}></input>
                 <input type='password' className='input-class' placeholder='Password' value={Password} onChange={(e)=>setPassword(e.target.value)} ></input>
                 {/* <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={(e)=>setImage(e.target.files[0])}></input> */}
+                <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input>
                 <label htmlFor='file' className='label-class'>
                   <img src={Add} alt=''></img>
                   <p className='p1'> Add profile picture</p>
-                  <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input>
+                  {/* <input style={{display:'none'}} type='file' id='file' placeholder='Add profile picture' onChange={handleImage}></input> */}
                 </label>
                 <button className='button-class'>Sign-up</button>
             </form>
