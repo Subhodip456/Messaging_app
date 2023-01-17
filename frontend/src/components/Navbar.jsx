@@ -10,7 +10,7 @@ const Navbar = () => {
   const [id,setID] = useState("")
   const getName = async () => {
     try{
-      let getName_response = await axios.get("http://localhost:2500/Register")
+      let getName_response = await axios.get("https://messaging-api.onrender.com/Register")
       setNames(getName_response.data[0].Name)
       setImg(getName_response.data[0].image)
       setID(getName_response.data[0]._id)
@@ -30,7 +30,7 @@ const Navbar = () => {
     const updateImage = async (url) => {   
       try{
         console.log("url =",url)
-        let updateImage_response = await axios.patch(`http://localhost:2500/Register/${id}`,{
+        let updateImage_response = await axios.patch(`https://messaging-api.onrender.com/Register/${id}`,{
           image:url
         })
         setImg(url)

@@ -18,7 +18,7 @@ const Chats = () => {
   useEffect(() => {
     const getChat = async () => {
       try{
-        const req = await axios.post("http://localhost:2500/Searchuser",{
+        const req = await axios.post("https://messaging-api.onrender.com/Searchuser",{
           Name:username
         })
         // console.log("request =>",req.data)

@@ -31,7 +31,7 @@ const Chat = () => {
     // console.log("message at chat",message)
     // console.log("Name",Name)
     try{
-      const req = await axios.post("http://localhost:2500/message",{
+      const req = await axios.post("https://messaging-api.onrender.com/message",{
       message:message,
       chatName:Name
     })
