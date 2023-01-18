@@ -4,6 +4,7 @@ import  axios from "axios"
 import {useNavigate,Link} from "react-router-dom"
 import Profilepicture from '../components/Profilepicture'
 import {ChatContext} from '../Context/chatContext'
+import hh from '../img/hh.png'
 
 
 
@@ -12,7 +13,7 @@ const Register = ({register}) => {
 const [Names,setNames]=useState('')
 const [Email,setEmail]=useState('')
 const [Password,setPassword]=useState('')
-const [image,setimage] = useState("https://i.ibb.co/vv7yk3P/hh.png")
+const [image,setimage] = useState(hh)
 
 const navigate = useNavigate()
 
