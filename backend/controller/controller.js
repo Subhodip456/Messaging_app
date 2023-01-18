@@ -64,7 +64,7 @@ exports.getlatestUser = (req,res) => {
 //update user image url
 exports.updateUser = (req,res) => {
     console.log("req.body",req.body)
-    db.findByIdAndUpdate(req.params.id,{$set:req.body},{returnOriginal:false})
+    db.findByIdAndUpdate(req.params.id,{$set:req.body})
     .then(result=>{
         console.log("result",result)
         res.status(200).send(result)
