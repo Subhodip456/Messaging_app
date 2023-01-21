@@ -9,7 +9,7 @@ const {image,setimage} = useContext(ChatContext)
 const handleImage = (e) => {
 const img_src = e.target.files[0]  
 const image_url = URL.createObjectURL(img_src)
-console.log("url",image_url)
+// console.log("url",image_url)
 setimage(image_url)
 }
 
